@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- VIEWPORT SCALE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ticket2</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <img src="img/train.png" alt="logo">
+        <h1>Train Ticket</h1>
+      </div>
+    </header>
+    <main>
+
+      <div class="form">
+        <h2>Dati Passeggero</h2>
+        <div>
+          <label for="nome">Nome</label>
+          <input id="name" type="string" name="nome" placeholder="Nome" value="">
+        </div>
+
+        <div>
+          <label for="cognome">Cognome</label>
+          <input id="familyName" type="string" name="cognome" placeholder="Cognome" value="">
+        </div>
+
+        <div>
+          <label for="km">Km da percorrere</label>
+          <input id="userKm" type="number" name="km" placeholder="km da percorrere" value="">
+        </div>
+
+        <div>
+          <label for="ageCategory">Categoria</label>
+          <select id="userAge" name="categoria">
+            <option value="Maggiorenne" selected>Tra 18 e 65 anni</option>
+            <option value="Over65">Over 65</option>
+            <option value="Under18">Under 18</option>
+          </select>
+
+          <button id="btn" type="button" name="button">Crea Ticket</button>
+
+        </div>
+      </div>
+
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Passeggero</th>
+              <th>Numero Treno</th>
+              <th>Carrozza</th>
+              <th>Prezzo</th>
+            </tr>
+            <td id="tbName"></td>
+            <td id="NumeroTreno"></td>
+            <td id="Carrozza"></td>
+            <td id="ticketCost"></td>
+
+          </thead>
+
+        </table>
+
+      </div>
+      <div class="main-container">
+        <div class="train-container">
+
+          <div class="train-card">
+            <h2>La tariffa a te riservata è</h2>
+            <h3 id="ticketRate"></h3>
+            <h3 id="ticketCost"></h3>
+            <h3 id="subtitle"></h3>
+          </div>
+
+          <div class="location-card"></div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+  	<script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+</html>
