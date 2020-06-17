@@ -21,58 +21,59 @@
       </div>
     </header>
     <main>
-
-      <div class="form">
-        <h2>Dati Passeggero</h2>
-        <div>
-          <label for="nome">Nome</label>
-          <input id="name" type="string" name="nome" placeholder="Nome" value="">
-        </div>
-
-        <div>
-          <label for="cognome">Cognome</label>
-          <input id="familyName" type="string" name="cognome" placeholder="Cognome" value="">
-        </div>
-
-        <div>
-          <label for="km">Km da percorrere</label>
-          <input id="userKm" type="number" name="km" placeholder="km da percorrere" value="">
-        </div>
-
-        <div>
-          <label for="ageCategory">Categoria</label>
-          <select id="userAge" name="categoria">
-            <option value="Maggiorenne" selected>Tra 18 e 65 anni</option>
-            <option value="Over65">Over 65</option>
-            <option value="Under18">Under 18</option>
-          </select>
-
-          <button id="btn" type="button" name="button">Crea Ticket</button>
-
-        </div>
-      </div>
-
-      <div class="table">
-        <table>
-          <thead>
-            <tr>
-              <th>Passeggero</th>
-              <th>Numero Treno</th>
-              <th>Carrozza</th>
-              <th>Prezzo</th>
-            </tr>
-            <td id="tbName"></td>
-            <td id="NumeroTreno"></td>
-            <td id="Carrozza"></td>
-            <td id="ticketCost"></td>
-
-          </thead>
-
-        </table>
-
-      </div>
       <div class="main-container">
         <div class="train-container">
+
+          <div class="form">
+            <h2>Dati Passeggero</h2>
+            <div>
+              <label for="nome">Nome</label>
+              <input id="name" type="string" name="nome" placeholder="Nome" value="">
+            </div>
+
+            <div>
+              <label for="cognome">Cognome</label>
+              <input id="familyName" type="string" name="cognome" placeholder="Cognome" value="">
+            </div>
+
+            <div>
+              <label for="km">Km da percorrere</label>
+              <input id="userKm" type="number" name="km" placeholder="km da percorrere" value="">
+            </div>
+
+            <div>
+              <label for="ageCategory">Categoria</label>
+              <select id="userAge" name="categoria">
+                <option value="Maggiorenne" selected>Tra 18 e 65 anni</option>
+                <option value="Over65">Over 65</option>
+                <option value="Under18">Under 18</option>
+              </select>
+
+              <button id="btnCreate" type="button" name="ticketCreator">Crea Ticket</button>
+              <button id="btnClear" type="button" name="button">Cancella Dati</button>
+
+            </div>
+          </div>
+
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Passeggero</th>
+                  <th>Numero Treno</th>
+                  <th>Carrozza</th>
+                  <th>Prezzo</th>
+                </tr>
+                <tr id="ticketTable">
+                <td id="customer"></td>
+                <td id="numeroTreno"></td>
+                <td id="carrozza"></td>
+                <td id="ticketCost"></td>
+                </tr>
+              </thead>
+
+            </table>
+          </div>
 
           <div class="train-card">
             <h2>La tariffa a te riservata è</h2>
@@ -81,9 +82,12 @@
             <h3 id="subtitle"></h3>
           </div>
 
-          <div class="location-card"></div>
+
         </div>
       </div>
+
+
+
     </main>
 
 
