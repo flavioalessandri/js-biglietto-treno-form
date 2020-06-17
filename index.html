@@ -22,7 +22,12 @@
     </header>
     <main>
       <div class="main-container">
-        <div class="train-container">
+
+        <div>
+          <h2>Il miglior modo di viaggiare è farlo con noi!</h2>
+        </div>
+
+        <div class="train-section">
 
           <div class="form">
             <h2>Dati Passeggero</h2>
@@ -55,8 +60,8 @@
             </div>
           </div>
 
-          <div class="table">
-            <table>
+          <div class="table" >
+            <table id="toShow" class="hidden">
               <thead>
                 <tr>
                   <th>Passeggero</th>
@@ -65,33 +70,32 @@
                   <th>Prezzo</th>
                 </tr>
                 <tr id="ticketTable">
-                <td id="customer"></td>
-                <td id="numeroTreno"></td>
-                <td id="carrozza"></td>
-                <td id="ticketCost"></td>
+                  <td id="customer"></td>
+                  <td id="numeroTreno"></td>
+                  <td id="carrozza"></td>
+                  <td id="ticketCost"></td>
                 </tr>
               </thead>
 
             </table>
           </div>
 
-          <div class="train-card">
-            <h2>La tariffa a te riservata è</h2>
+          <div class="resume">
+            <h2 id="ticketResume" class="hidden">La tariffa a te riservata è</h2>
             <h3 id="ticketRate"></h3>
-            <h3 id="ticketCost"></h3>
-            <h3 id="subtitle"></h3>
+            <h3 id="ticketBill"></h3>
+            <h3 id="moneySafe"></h3>
           </div>
 
-
         </div>
+
+        <div class="countdown-card">
+          <h3> il tuo Ultimo Accesso </h3>
+          <h3 id="countDown"></h3>
+        </div>
+
       </div>
-
-
-
     </main>
-
-
-
 
   	<script type="text/javascript" src="js/script.js"></script>
 
