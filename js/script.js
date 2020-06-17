@@ -80,6 +80,9 @@ btnCreate.addEventListener("click", function() {
     document.getElementById("numeroTreno").innerHTML = numeroTreno;
     document.getElementById("carrozza").innerHTML = carrozza;
     document.getElementById("ticketCost").innerHTML = ticketCost + "€";
+
+    document.getElementById("dateTable").classList.remove("bgColor");
+    document.getElementById("dateTable").classList.add("bgWhite");
 });
 
 // closing FUNCTION 1.............................................................
@@ -101,6 +104,9 @@ btnClear.addEventListener("click", function() {
   document.getElementById("ticketRate").className = "hidden";
   document.getElementById("ticketBill").className = "hidden";
   document.getElementById("moneySafe").className = "hidden";
+
+  document.getElementById("dateTable").classList.remove("bgWhite");
+  document.getElementById("dateTable").classList.add("bgColor");
 
 });
 
