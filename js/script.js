@@ -9,7 +9,7 @@ var month = new Date().getMonth();
 var hour = new Date().getHours();
 var minutes = new Date().getMinutes();
 
-document.getElementById("countDown").innerHTML= day + " / " + month + " / " + hour +  " : " + minutes;
+document.getElementById("countDown").innerHTML= "0"+ day + " / " + "0"+ month + " / " + hour +  " : " + minutes;
 
 
 // Open FUNCTION 1........................................................
